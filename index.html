@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rent a Car</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Rent a Car</h2>
+            <p>Your perfect car rental service.</p>
+        </section>
+        <section id="cars">
+            <h2>Our Cars</h2>
+            <div class="car" id="car1">
+                <img src="car1.jpg" alt="Car 1">
+                <h3>Car Model 1</h3>
+                <p>Price: $50/day</p>
+                <button onclick="rentCar('Car Model 1')">Rent Now</button>
+            </div>
+            <div class="car" id="car2">
+                <img src="car2.jpg" alt="Car 2">
+                <h3>Car Model 2</h3>
+                <p>Price: $60/day</p>
+                <button onclick="rentCar('Car Model 2')">Rent Now</button>
+            </div>
+            <div class="car" id="car3">
+                <img src="car3.jpg" alt="Car 3">
+                <h3>Car Model 3</h3>
+                <p>Price: $70/day</p>
+                <button onclick="rentCar('Car Model 3')">Rent Now</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rent a Car. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
